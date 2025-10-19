@@ -1,0 +1,246 @@
+* {
+    font-family: 'SF Pro Text', 'Inter', 'Segoe UI, NotoSans Nerd Font', sans-serif;
+    font-size: 13px;
+    min-height: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+
+#waybar {
+    padding: 6px 0;
+    background: transparent;
+    color: #ffffff;
+    margin: 0px;
+    font-weight: 500;
+}
+
+#workspaces,
+#memory {
+    background-color: #222222;
+    padding: 0.3rem 0.7rem;
+    margin: 5px 0px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    min-width: 0;
+    border: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#workspaces {
+    padding: 2px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#memory {
+    color: #ffffff;
+}
+
+#memory:hover {
+    background-color: #333333;
+}
+
+#workspaces button {
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0.3rem 0.6rem;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    outline: none;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+#workspaces button:hover {
+    background: #333333;
+    color: #ffffff;
+}
+
+#clock {
+    background-color: #222222;
+    padding: 0.3rem 0.7rem;
+    margin: 5px 0px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    min-width: 0;
+    border: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#clock:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#custom-pomodoro {
+    background-color: #222222;
+    padding: 0.3rem 0.7rem;
+    margin: 5px 0px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    min-width: 0;
+    border: none;
+    outline: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, outline 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#custom-pomodoro {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#custom-pomodoro:hover {
+    background-color: #333333;
+    color: #ffffff;
+    outline: 1px solid rgba(255, 255, 255, 0.1);
+    outline-offset: -1px;
+}
+
+#custom-pomodoro.work,
+#custom-pomodoro.break {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+#tray,
+#bluetooth,
+#pulseaudio,
+#backlight,
+#network,
+#custom-lock,
+#battery {
+    background-color: #222222;
+    padding: 0.3rem 0.7rem;
+    margin: 5px 0px;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    color: #ffffff;
+}
+
+#tray:hover,
+#bluetooth:hover,
+#pulseaudio:hover,
+#backlight:hover,
+#network:hover,
+#custom-lock:hover,
+#battery:hover {
+    background-color: #333333;
+}
+
+/* TRAY: Módulo separado e arredondado */
+#tray {
+    padding: 5px 10px; 
+    margin-left: 10px;
+    margin-right: 7px; /* Adiciona o espaço de separação */
+    border-radius: 6px; /* Canto arredondado total */
+    min-width: 40px;
+}
+
+#tray > .item {
+    padding: 0;
+    margin: 0px;
+    border-radius: 0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#tray > .item:hover {
+    background-color: #333333;
+}
+
+/* BLUETOOTH: Começa o novo bloco, com arredondamento esquerdo */
+#bluetooth {
+    margin-left: 0px; 
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+/* BATTERY: Fecha o novo bloco, com arredondamento direito */
+#battery {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-right: 7px;
+    
+    /* Garante que, se for o único, o arredondamento é total */
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+/* Garante que os módulos do meio estejam colados */
+#pulseaudio,
+#backlight,
+#network,
+#custom-lock {
+    border-radius: 0px;
+    margin-left: 0px; 
+    margin-right: 0px; 
+}
+
+
+#pulseaudio {
+    color: #ffffff;
+}
+
+#backlight {
+    color: #ffffff;
+}
+
+#network {
+    color: #ffffff;
+}
+
+#network.disconnected {
+    color: #aaaaaa;
+}
+
+#custom-lock {
+    color: #ffffff;
+}
+
+#bluetooth {
+    color: #aaaaaa;
+    font-size: 16px;
+}
+
+#bluetooth.on {
+    color: #ffffff;
+}
+
+#bluetooth.connected {
+    color: #ffffff;
+}
+
+#battery {
+    color: #ffffff;
+}
+
+#battery.charging {
+    color: #ffffff;
+}
+
+#battery.warning:not(.charging) {
+    color: #aaaaaa;
+}
+
+tooltip {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 5px 12px;
+    margin: 5px 0px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+}
