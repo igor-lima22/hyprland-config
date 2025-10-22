@@ -19,7 +19,8 @@
     "network",
     "pulseaudio",
     "backlight",
-    "battery"
+    "battery",
+    "custom/powermenu"
   ],
 
   "hyprland/workspaces": {
@@ -98,5 +99,13 @@
     "tooltip": false,
     "on-click": "sh -c '(sleep 0s; hyprlock)' & disown",
     "format": ""
+  },
+
+  "custom/powermenu": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "~/.config/rofi/scripts/power-menu.sh",
+    "interval": 0
   }
+
 }
