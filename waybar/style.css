@@ -8,7 +8,7 @@
 }
 
 #waybar {
-    padding: 6px 0;
+    padding: 12px 0;
     background: transparent;
     color: #ffffff;
     margin: 0px;
@@ -18,7 +18,7 @@
 #workspaces,
 #memory {
     background-color: #222222;
-    padding: 0.3rem 0.7rem;
+    padding: 5px 12px;
     margin: 5px 0px;
     border-radius: 6px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -44,7 +44,7 @@
 #workspaces button {
     color: #ffffff;
     border-radius: 5px;
-    padding: 0.3rem 0.6rem;
+    padding: 5px 10px;
     background: transparent;
     transition: all 0.2s ease-in-out;
     border: none;
@@ -64,7 +64,7 @@
 
 #clock {
     background-color: #222222;
-    padding: 0.3rem 0.7rem;
+    padding: 5px 12px;
     margin: 5px 0px;
     border-radius: 6px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -81,7 +81,7 @@
 
 #custom-pomodoro {
     background-color: #222222;
-    padding: 0.3rem 0.7rem;
+    padding: 5px 12px;
     margin: 5px 0px;
     border-radius: 6px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -121,7 +121,7 @@
 #custom-lock,
 #battery {
     background-color: #222222;
-    padding: 0.3rem 0.7rem;
+    padding: 5px 12px;
     margin: 5px 0px;
     border-radius: 0;
     box-shadow: none;
@@ -141,7 +141,7 @@
 }
 
 #tray {
-    padding: 5px 10px; 
+    padding: 5px 10px;
     margin-left: 10px;
     margin-right: 7px;
     border-radius: 6px;
@@ -159,34 +159,28 @@
     background-color: #333333;
 }
 
-/* BLUETOOTH: Começa o novo bloco, com arredondamento esquerdo */
 #bluetooth {
-    margin-left: 0px; 
+    margin-left: 0px;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
 }
 
-/* BATTERY: Fecha o novo bloco, com arredondamento direito */
 #battery {
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     margin-right: 7px;
-    
-    /* Garante que, se for o único, o arredondamento é total */
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
 }
 
-/* Garante que os módulos do meio estejam colados */
 #pulseaudio,
 #backlight,
 #network,
 #custom-lock {
     border-radius: 0px;
-    margin-left: 0px; 
-    margin-right: 0px; 
+    margin-left: 0px;
+    margin-right: 0px;
 }
-
 
 #pulseaudio {
     color: #ffffff;
