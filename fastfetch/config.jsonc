@@ -18,27 +18,27 @@
     {
       "type": "host",
       "key": " PC",
-      "keyColor": "#1793D1"
+      "keyColor": "#32D7D8"
     },
     {
       "type": "cpu",
       "key": "│ ├",
-      "keyColor": "#1793D1"
+      "keyColor": "#32D7D8"
     },
     {
       "type": "gpu",
       "key": "│ ├󰍛",
-      "keyColor": "#1793D1"
+      "keyColor": "#32D7D8"
     },
     {
       "type": "memory",
       "key": "│ ├󰍛",
-      "keyColor": "#1793D1"
+      "keyColor": "#32D7D8"
     },
     {
       "type": "disk",
       "key": "└ └",
-      "keyColor": "#1793D1"
+      "keyColor": "#32D7D8"
     },
     {
       "type": "custom",
@@ -52,53 +52,53 @@
     {
       "type": "os",
       "key": " OS",
-      "keyColor": "#126CA1"
+      "keyColor": "#259C9D"
     },
     {
       "type": "kernel",
       "key": "│ ├",
-      "keyColor": "#126CA1"
+      "keyColor": "#259C9D"
     },
     {
       "type": "bios",
       "key": "│ ├",
-      "keyColor": "#126CA1"
+      "keyColor": "#259C9D"
     },
     {
       "type": "packages",
       "key": "│ ├󰏖",
-      "keyColor": "#126CA1"
+      "keyColor": "#259C9D"
     },
     {
       "type": "shell",
       "key": "└ └",
-      "keyColor": "#126CA1"
+      "keyColor": "#259C9D"
     },
     "break",
     {
       "type": "de",
       "key": " DE",
-      "keyColor": "#0D496F"
+      "keyColor": "#1A6A6B"
     },
     {
       "type": "lm",
       "key": "│ ├",
-      "keyColor": "#0D496F"
+      "keyColor": "#1A6A6B"
     },
     {
       "type": "wm",
       "key": "│ ├",
-      "keyColor": "#0D496F"
+      "keyColor": "#1A6A6B"
     },
     {
       "type": "wmtheme",
       "key": "│ ├󰉼",
-      "keyColor": "#0D496F"
+      "keyColor": "#1A6A6B"
     },
     {
       "type": "terminal",
       "key": "└ └",
-      "keyColor": "#0D496F"
+      "keyColor": "#1A6A6B"
     },
     {
       "type": "custom",
